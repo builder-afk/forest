@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # Edge Reverse Proxy & Load Balancer
+  load_balancer:
+    image: nginx:alpine
+    container_name: apex_load_balancer
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../dist:/usr/share/nginx/html:ro
+    depends_on:
+      - app_node_1
+      - app_node_2
+      - redis
+    networks:
+      - apex_network
+
+  # Backend App Instance 1
+  app_node_1:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.backend
+    container_name: apex_app_node_1
+    restart: always
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - apex_network
+
+  # Backend App Instance 2 (Load Balanced)
+  app_node_2:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.backend
+    container_name: apex_app_node_2
+    restart: always
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - apex_network
+
+  # Shared Redis Cache Layer
+  redis:
+    image: redis:7-alpine
+    container_name: apex_redis_cache
+    restart: always
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru --save ""
+    ports:
+      - "6379:6379"
+    networks:
+      - apex_network
+
+networks:
+  apex_network:
+    driver: bridge
+

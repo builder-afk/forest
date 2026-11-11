@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#d9d9df","secondary-container":"#ff5722","on-error":"#ffffff","surface-tint":"#536600","primary-container":"#d4ff00","on-primary-fixed":"#171e00","on-primary-fixed-variant":"#3e4c00","on-primary-container":"#5f7400","surface-container-highest":"#e2e2e8","secondary-fixed":"#ffdbd1","surface-variant":"#e2e2e8","error-container":"#ffdad6","primary-fixed":"#caf300","on-tertiary-fixed":"#001f24","on-surface":"#1a1c20","surface-bright":"#f9f9ff","inverse-on-surface":"#f0f0f6","on-tertiary-container":"#007785","secondary":"#b02f00","background":"#f9f9ff","on-tertiary-fixed-variant":"#004f58","outline-variant":"#c5c9ac","inverse-surface":"#2f3035","outline":"#757a60","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb5a0","primary":"#536600","on-surface-variant":"#444932","surface-container":"#ededf3","on-secondary-container":"#541100","surface-container-high":"#e8e8ed","on-secondary-fixed-variant":"#862200","on-secondary":"#ffffff","tertiary-fixed-dim":"#00daf3","on-secondary-fixed":"#3b0900","tertiary-fixed":"#9cf0ff","on-primary":"#ffffff","inverse-primary":"#b0d500","surface-container-lowest":"#ffffff","error":"#ba1a1a","surface-container-low":"#f3f3f9","on-background":"#1a1c20","on-error-container":"#93000a","tertiary":"#006875","surface":"#f9f9ff","primary-fixed-dim":"#b0d500","tertiary-container":"#c9f6ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"3rem","gutter-mobile":"0.75rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem"},"fontFamily":{"headline-sm":["Outfit"],"body-sm":["Plus Jakarta Sans"],"title-lg":["Outfit"],"headline-md":["Outfit"],"headline-lg-mobile":["Outfit"],"display-hero-mobile":["Outfit"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Outfit"],"numeric-stat":["Outfit"],"display-hero":["Outfit"],"label-md":["Outfit"],"label-caps":["Outfit"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"headline-sm":["22px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"500"}],"title-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["30px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"numeric-stat":["32px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-surface select-none" data-path="overview-dashboard" href="#"><span class="w-8 h-8 rounded-lg bg-inverse-surface flex items-center justify-center font-headline-sm text-headline-sm text-primary-container font-extrabold">A</span><span class="font-title-lg text-title-lg uppercase tracking-tight text-on-surface">Apex<span class="text-primary">Fuel</span></span></a><nav class="hidden xl:flex items-center gap-space-md ml-space-sm" data-active-classes="text-on-surface font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="products-directory" href="#">Products Directory</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="partner-stores" href="#">Partner Stores</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="science-labs" href="#">Science &amp; Labs</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="athlete-perks" href="#">Athlete Perks</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container focus:text-on-surface transition-all" placeholder="Search formulas, batches, partner stores..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center cursor-pointer text-on-surface-variant hover:text-on-surface transition-colors p-space-xs"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 bg-secondary-container text-on-secondary rounded-full font-label-caps text-label-caps flex items-center justify-center font-bold">3</span></div><div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg cursor-pointer hover:bg-surface-container transition-colors"><div class="flex flex-col text-right"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Role Mode</span><span class="font-label-md text-label-md text-on-surface uppercase">Pro Athlete</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 flex flex-col py-space-md"><div class="px-space-md mb-space-md"><div class="p-space-xs bg-surface-container rounded-lg flex gap-space-xs"><a class="flex-1 py-space-xs text-center rounded-lg bg-surface-container-lowest font-label-caps text-label-caps text-on-surface uppercase shadow-[0_1px_4px_rgba(0,0,0,0.04)]" data-path="overview-dashboard" href="#">Athlete Hub</a><a class="flex-1 py-space-xs text-center rounded-lg font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface uppercase transition-colors" data-path="storefront-portal" href="#">Store Portal</a></div></div><div class="px-space-md mb-space-xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Athlete Account</span></div><nav class="flex-1 px-space-sm flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">grid_view</span>Performance Deck</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="fuel-subscriptions" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">autorenew</span>Fuel Subscriptions</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="batch-analytics" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">biotech</span>Batch Verifications</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="orders-shipments" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">local_shipping</span>Orders &amp; Shipments</a><div class="my-space-sm pt-space-sm px-space-xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Partner Operations</span></div><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="storefront-portal" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">storefront</span>Storefront Portal</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="inventory-allocations" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">inventory_2</span>Stock Allocations</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="partner-commissions" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">payments</span>Commissions &amp; Payouts</a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Verification Status</span><span class="font-label-md text-label-md text-primary font-bold uppercase">Informed Sport OK</span></div><span class="material-symbols-outlined text-primary text-[20px]">verified</span></div></div></aside><div class="pl-64"><main class="relative pt-16 w-full px-gutter min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Athlete Top Elevation Profile Banner -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg shadow-sm mb-space-lg overflow-hidden">
+<div class="absolute -right-16 -top-24 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/4 -bottom-16 w-64 h-64 rounded-full bg-secondary-container/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<!-- Athlete Credentials Info -->
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-inverse-surface flex items-center justify-center p-0.5 shadow-md">
+<img class="w-full h-full object-cover rounded-full" data-alt="High contrast professional athletic portrait of Marcus Vance, a focused decathlete with focused gaze under stark studio rim lighting and muted graphite shadows, apex performance aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNLYs5ZgohQqbwuFoE_YFo4I4QiGajgPFTUMLQiW3ya3Jjh3h3-Juzga5FPmpnJOBXZyahsztUjy6NZLEcW8gCTDR1QuDojK3gjcNiHhw9B0w-5_WMlf7Rb5nwyaCwINFT_nvaEbYkxXlhpGxQe-eeu3fyiNo7gr3lrQa_Sv37LhdiFqlULJzWdqj8cvtX4Y7Cy-xZg6TvZtsMvDy_IOmtZpHDp1l2oWDiJa6Jptf5"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-bold" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Marcus Vance</h1>
+<span class="px-space-xs py-0.5 bg-inverse-surface text-primary-container font-label-caps text-label-caps rounded-lg uppercase tracking-wider">Pro Tier 1</span>
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps rounded-lg uppercase">WADA Monitored</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span>Decathlon Specialist</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span>Olympic Trials Cohort #44</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-primary font-bold">Verified Direct Buyer</span>
+</p>
+</div>
+</div>
+<!-- Live Metric Badges Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs bg-surface-container rounded-xl p-space-xs shadow-inner">
+<div class="bg-surface-container-lowest rounded-lg px-space-md py-space-sm flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Fuel Dispatches</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-numeric-stat text-numeric-stat text-on-surface">14</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">LIFETIME</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg px-space-md py-space-sm flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Subscriptions</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-numeric-stat text-numeric-stat text-on-surface">02</span>
+<span class="font-label-caps text-label-caps text-secondary-container font-bold">4D T-MINUS</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg px-space-md py-space-sm flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Saved Stacks</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-numeric-stat text-numeric-stat text-on-surface">08</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">FORMULAS</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg px-space-md py-space-sm flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HPLC Reports</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-numeric-stat text-numeric-stat text-tertiary">12</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">VERIFIED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Account Sub-Nav Menu Strip -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between overflow-x-auto gap-space-md border-t-0">
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="px-space-md py-space-xs bg-inverse-surface text-primary-container font-label-md text-label-md rounded-lg flex items-center gap-space-xs shadow-sm cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>Saved Formulations (8)</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Active Subscriptions (2)</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span>HPLC Batch Vault</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Macro Calibration</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+<span>Athlete Profile &amp; KYC</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Calibration Sync:</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">100% WADA Compliant</span>
+</div>
+</div>
+</section>
+<!-- Main Bento Grid Architecture -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Column: Wishlist / Saved Formulations Matrix (8 Cols on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Wishlist Header & Filter Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight">Saved Fuel Formulations</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lab-verified formulas pinned to your active training cycle</p>
+</div>
+</div>
+<!-- Quick Bulk Actions -->
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md rounded-lg flex items-center gap-space-xs shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Move All In-Stock to Bag (6)</span>
+</button>
+<button class="p-space-xs bg-surface-container text-on-surface rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer flex items-center justify-center" title="Export Macros">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+</div>
+</div>
+<!-- Filter Chips Carousel Strip -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs">
+<button class="px-space-sm py-1 bg-inverse-surface text-primary-container font-label-caps text-label-caps rounded-full whitespace-nowrap cursor-pointer">All Saved (8)</button>
+<button class="px-space-sm py-1 bg-surface-container text-on-surface font-label-caps text-label-caps rounded-full hover:bg-surface-container-high whitespace-nowrap cursor-pointer transition-colors">Protein Isolates (4)</button>
+<button class="px-space-sm py-1 bg-surface-container text-on-surface font-label-caps text-label-caps rounded-full hover:bg-surface-container-high whitespace-nowrap cursor-pointer transition-colors">Creatine &amp; Pre-Drive (2)</button>
+<button class="px-space-sm py-1 bg-surface-container text-on-surface font-label-caps text-label-caps rounded-full hover:bg-surface-container-high whitespace-nowrap cursor-pointer transition-colors">Recovery &amp; Fuel (2)</button>
+<button class="px-space-sm py-1 bg-surface-container text-on-surface font-label-caps text-label-caps rounded-full hover:bg-surface-container-high whitespace-nowrap cursor-pointer transition-colors">In-Stock Priority</button>
+<button class="px-space-sm py-1 bg-surface-container text-primary font-label-caps text-label-caps rounded-full hover:bg-surface-container-high whitespace-nowrap cursor-pointer transition-colors">Subscribed (2)</button>
+</div>
+</div>
+<!-- High-Density Product Matrix (6 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- CARD 1: Apex Hydrolyzed Whey Isolate (CFM) -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Matte black tub of Apex Hydrolyzed Whey Isolate sports nutrition protein supplement with neon volt typography and batch lab tag, clean lighting against soft gray surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi1ydWspJ-M2fXUV5TkkyTmR8eRKiIVhBF211sfTjoyep0BzjlLWD-tFDEQV5uqExuI2brr_7aCpNZwIv4ReQfTjibboBJlNnYUMRnaRpKR9lT-kfaWHkpq6Sv8npk7xZ12LOlUnO1TMhXL5c_5c_vQvsLMM0qLI6fCUV0hgo_UdaWVSOMa6AxfdH2-23JEnjl5TDTa1Qp8R-r9zxMhZxFskN3tTwmRv4p1-FyqvJv"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-inverse-surface text-primary-container font-label-caps text-label-caps">CFM COLD FILTER</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-fixed font-label-caps text-label-caps font-bold">24H DISPATCH</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #CFM-8820</span>
+<span class="text-primary font-bold">BOURBON MADAGASCAR VANILLA</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Apex Hydrolyzed Whey Isolate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">Ultra-refined enzymatically cleaved peptide profile for sub-30min absorption.</p>
+<!-- Macro micro-strip -->
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PROTEIN</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">30g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">CARBS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">&lt;1g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">ENERGY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">130 kcal</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$64.99</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through ml-1">$72.00</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary font-bold">$51.99 W/ AUTO-SHIP</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+<button class="w-full py-2 bg-inverse-surface text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-on-surface transition-colors cursor-pointer">
+<span>Save 20% Sub</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Apex Pro Whey Isolate 5lb Bulk -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A 5lb heavy duty gusset bag of Apex Pro Whey Isolate Dark Belgian Cocoa Fudge with athletic volt accents and lab batch certificate badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmcFeOHl3iKyfYGVbBP1KtFNvVg7OfBhej-HECGtwckBErpBWj38Nw2s5w4XydKcLiIwzQeKb9EfTsQGdqalzSH7mhx1roA1yywBUIOyQ0DBurDO6Yoq65Ly1Rqws98OvrDkB5nzKOwtsJQKpZRNreoNlwHnV-HjuMGyAdHkAuL3gDYut6sp3TPDUUqWUcostcyuTtnuCbgfwdMMZAu_YxMSCzfVyX1m9J_9QH37Nw"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary font-label-caps text-label-caps">ACTIVE SUB (30D)</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-fixed font-label-caps text-label-caps font-bold">5LB BULK PRO-TUB</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #W5B-1092</span>
+<span class="text-primary font-bold">DARK BELGIAN COCOA FUDGE</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Apex Pro Whey Isolate 5lb Bulk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">77 servings of pure cross-flow microfiltered isolate with DigeZyme enzymes.</p>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PROTEIN</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">30g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">CARBS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">1g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">ENERGY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">130 kcal</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$109.99</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through ml-1">$125.00</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary font-bold">$87.99 ACTIVE SUB</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+<button class="w-full py-2 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span>Manage Sub</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Clear Whey Hydrolysate Citrus -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Clear modern supplement jar containing translucent light yellow Clear Whey Hydrolysate Citrus powder with fresh sliced lemons beside packaging, high key studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpNHDey9xQ2HyAQPYn1MFI2pXYNpxlWSkSHWck1dXTQDh-x6Dbg_UNIwN2ilQHA9Re9-cTHa3zUTsBi6uguq7Jo8BFyV93QyrmPKyKn2m2XHqoBOWi_I21HdUJL3aJS5UZFtsxom1p7xcd3iu8FWpf6OvRBOzhe0f7jSEdK7Xjcm3hnbLDzPJQm9GAe-DWpKc0W_aZk_ZhyEkcofEB1tJP99ugRUdpN2CFhs8miwOm"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-inverse-surface text-primary-container font-label-caps text-label-caps">ZERO MILKY TEXTURE</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">IN STOCK</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #CWH-402</span>
+<span class="text-primary font-bold">CRISP LEMON ICED</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Clear Whey Hydrolysate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">Light, thirst-quenching peptide isolate delivering crisp fruit juice taste.</p>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PROTEIN</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">20g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">SUGAR</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">0g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">ENERGY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">80 kcal</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$38.99</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">30 SERVINGS</span>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Creapure Micronized Creatine 500g -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Monochromatic technical tub of Creapure German Micronized Creatine powder with lab seals and Informed Sport certification badge on a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJBDE_fnew0vX0DyZrh4scDNuoL8QgVKgdlhGTwyXvrPwnZ82mAVbMOa1Iq8GuBtQDfsLm9YCMzYG8OA-FluXVMYVYC-H2dm-hsz3VAL4RcIu9g2K-ciiSFmrRJORQYD-OVqrFdnwkVBcsf7fRz6YvTGbEKqfMfqKtIJO5irN5pdby_0b-CKlo4jzFkYttZWt_jVGnJJEWmOqSSNkp_Qml-oUyquRjXLLpNcX6CFix"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-caps text-label-caps">GERMAN CREAPURE®</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary font-label-caps text-label-caps">ACTIVE SUB (60D)</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #APX-CR-904</span>
+<span class="text-primary font-bold">PURE UNFLAVORED</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Creapure® Micronized 500g</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">99.95% analytical purity verified via HPLC testing. Zero additives.</p>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">CREATINE</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">5.0g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">SERVINGS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">100 SCOOPS</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PURITY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">99.9%</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$28.99</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">$23.19 W/ 60D SHIP</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+<button class="w-full py-2 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span>View Lab COA</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Night Micellar Casein -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Deep obsidian tub of Apex Night Micellar Casein with rich dark chocolate visual cues and laboratory grade seal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj-5YXCjhzTYyttzM-vpQnZfH5c6uIgJh-i29a3kJGdAU5Rnem7R5N6N9Gyfqcq6XORhwpkj3WrPx5Cp9kRoPlCmZQSJBsYgul6u5UNHcWdoRPYNs6kBnLgL1qohlzZAZYjMEEh7Mz-n1BoOQEHSKGLJsssInIzXkHk5hI9cpeYCjBl9_ureVU5zZCVRj15AEmv-uwk6dW3ylgFmJ-KCG-pKAT4PCaUvm1kl6HHRL7"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-inverse-surface text-tertiary-fixed font-label-caps text-label-caps">7-HOUR RELEASE</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">RESTOCK: 14 UNITS</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #CSN-7711</span>
+<span class="text-primary font-bold">SLOW DARK CHOCOLATE</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Night Micellar Casein Sustained</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">Time-released micellar matrix designed for anti-catabolic nocturnal recovery.</p>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PROTEIN</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">26g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">BCAAS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">5.5g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">ENERGY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">120 kcal</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$56.99</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">$45.59 W/ SUB</span>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+</div>
+</div>
+<!-- CARD 6: Apex Overnight Power Oats Tub -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Athletic high-protein meal tub of Apex Overnight Power Oats with green apple, cinnamon bark and chia seeds in dynamic modern packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-0MyO-xle1LPK1fBJfvuVSmGYMP-jyyfUP-DStKMCvWIVgKqXGkkhlpmnQpoKi5YMIOHVzNXuZQaqfZEmBKwi9-yAdOcX54_OIQSatzTs7lGvqCimt3yim_4G41kmwO1MpziJUgcq36dA-pQVs1i_jjvUwdXJPYrx4IRUM3oUkfmsErK9wFzVa8nS8WYGdpPZpmu-B5oe81hDSH_VI2Qs_Ze5vUrnCtvo_gzspkss"/>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-fixed font-label-caps text-label-caps">COMPLEX GLYCOGEN</span>
+</div>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-sm hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">IN STOCK</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-0.5">
+<span>BATCH #OAT-301</span>
+<span class="text-primary font-bold">APPLE CINNAMON &amp; CHIA</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors tracking-tight">Overnight Power Oats Tub</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-space-xs">Gluten-free rolled oats fortified with whey isolate and organic chia seeds.</p>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1.5 rounded-lg text-center mb-space-sm">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">PROTEIN</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">25g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">SLOW CARBS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">42g</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">ENERGY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">210 kcal</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$24.99</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">14 SATCHETS</span>
+</div>
+<button class="w-full py-2 bg-primary-container text-on-primary-fixed rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Move to Bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Macro Density Analysis for Saved Items -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface tracking-tight">Saved Formulations Stack Synergy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aggregated nutritional yield if consumed across Marcus's daily decathlon protocol</p>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container font-label-caps text-label-caps text-on-surface">CALIBRATED: 3,450 KCAL / DAY TARGET</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TOTAL STACK PRO</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">131g</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-1 block">78% of Daily Target</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">BCAA / EAA YIELD</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">28.4g</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 92%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary mt-1 block">92% Optimum Saturation</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">CREATINE SATURATION</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">5.0g</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-1 block">100% Maintenance Met</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ALLERGEN SAFETY</span>
+<span class="font-label-md text-label-md text-primary font-bold">0 GLUTEN / SOY</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1 block">Clean Verified ISO 17025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Subscriptions Deck + Batch Vault (4 Cols on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Section: Active Subscriptions Deck -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">autorenew</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface tracking-tight">Active Auto-Ship</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-fixed font-label-caps text-label-caps font-bold">2 ACTIVE</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Subscription 1 -->
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-container font-bold uppercase">DISPATCH IN 4 DAYS (T-MINUS)</span>
+<h4 class="font-title-lg text-title-lg text-on-surface mt-0.5 leading-snug">Apex Pro Whey Isolate 5lb Bulk</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cadence: Every 30 Days • Dark Belgian Cocoa</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$87.99</span>
+</div>
+<!-- Visual Progress to next dispatch -->
+<div class="mb-space-sm">
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant mb-1">
+<span>Cycle day 26 / 30</span>
+<span>Fulfillment Batch Locked</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 86%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1">
+<button class="py-1.5 px-2 bg-surface-container-lowest text-on-surface rounded font-label-caps text-label-caps hover:bg-surface-container-high transition-colors cursor-pointer text-center">
+                Skip 1 Ship
+              </button>
+<button class="py-1.5 px-2 bg-surface-container-lowest text-on-surface rounded font-label-caps text-label-caps hover:bg-surface-container-high transition-colors cursor-pointer text-center">
+                Swap Flavor
+              </button>
+<button class="py-1.5 px-2 bg-inverse-surface text-on-primary rounded font-label-caps text-label-caps hover:bg-on-surface transition-colors cursor-pointer text-center">
+                Manage
+              </button>
+</div>
+</div>
+<!-- Subscription 2 -->
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">DISPATCH IN 34 DAYS</span>
+<h4 class="font-title-lg text-title-lg text-on-surface mt-0.5 leading-snug">Creapure® Micronized 500g</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cadence: Every 60 Days • Unflavored 100-Serv</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$23.19</span>
+</div>
+<div class="mb-space-sm">
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant mb-1">
+<span>Cycle day 26 / 60</span>
+<span>On-Track</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 43%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1">
+<button class="py-1.5 px-2 bg-surface-container-lowest text-on-surface rounded font-label-caps text-label-caps hover:bg-surface-container-high transition-colors cursor-pointer text-center">
+                Skip 1 Ship
+              </button>
+<button class="py-1.5 px-2 bg-surface-container-lowest text-on-surface rounded font-label-caps text-label-caps hover:bg-surface-container-high transition-colors cursor-pointer text-center">
+                Send Now
+              </button>
+<button class="py-1.5 px-2 bg-inverse-surface text-on-primary rounded font-label-caps text-label-caps hover:bg-on-surface transition-colors cursor-pointer text-center">
+                Manage
+              </button>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center justify-center gap-1 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add Another Formula to Subscription (+15% OFF)</span>
+</button>
+</div>
+<!-- Section: Lab Dossiers & HPLC Batch Verification Vault -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">biotech</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface tracking-tight">HPLC Batch COA Vault</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Independent 3rd-Party Lab Certificates</p>
+</div>
+</div>
+</div>
+<!-- COA Records List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Record 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Batch #CFM-8820</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Hydrolyzed CFM • 99.4% Purity</span>
+</div>
+</div>
+<a class="p-space-xs text-primary hover:text-on-surface transition-colors flex items-center" href="#" title="Download COA PDF">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</a>
+</div>
+<!-- Record 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Batch #APX-CR-904</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Creapure® Creatine • 0.00% Heavy Metals</span>
+</div>
+</div>
+<a class="p-space-xs text-primary hover:text-on-surface transition-colors flex items-center" href="#" title="Download COA PDF">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</a>
+</div>
+<!-- Record 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Batch #W5B-1092</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Bulk Isolate 5lb • WADA Screen Negative</span>
+</div>
+</div>
+<a class="p-space-xs text-primary hover:text-on-surface transition-colors flex items-center" href="#" title="Download COA PDF">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</a>
+</div>
+<!-- Record 4 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Batch #CSN-7711</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Micellar Casein • Microbiological Pass</span>
+</div>
+</div>
+<a class="p-space-xs text-primary hover:text-on-surface transition-colors flex items-center" href="#" title="Download COA PDF">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</a>
+</div>
+</div>
+<!-- Verification Banner Card inside Vault -->
+<div class="mt-space-md p-space-sm bg-inverse-surface rounded-lg text-inverse-on-surface flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-primary-container text-on-primary-fixed flex items-center justify-center flex-shrink-0 font-headline-sm font-extrabold">
+            ✓
+          </div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-primary-container uppercase">Informed Sport Certificate</p>
+<p class="font-body-sm text-body-sm text-inverse-on-surface leading-tight">Every single batch is tested against 280+ banned substances.</p>
+</div>
+</div>
+<button class="w-full mt-space-sm py-2 bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">folder_zip</span>
+<span>Download All 12 Certificates (.ZIP)</span>
+</button>
+</div>
+<!-- Quick Delivery Address & Billing Snapshot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">PRIMARY ATHLETE DISPATCH POINT</span>
+<span class="font-label-caps text-label-caps text-primary font-bold cursor-pointer hover:underline">EDIT</span>
+</div>
+<p class="font-title-lg text-title-lg text-on-surface">Olympic Training Village, Apt 402</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chula Vista Elite Athlete Center, CA 91915</p>
+<div class="mt-space-sm pt-space-sm flex items-center justify-between text-on-surface-variant border-t-0">
+<span class="font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>MasterCard •••• 9924 (Exp 08/28)</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase">DEFAULT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Micro-interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Filter pill toggle interaction
+      const filterPills = document.querySelectorAll('button[class*="rounded-full"]');
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            if (p.classList.contains('bg-inverse-surface')) {
+              p.classList.remove('bg-inverse-surface', 'text-primary-container');
+              p.classList.add('bg-surface-container', 'text-on-surface');
+            }
+          });
+          pill.classList.remove('bg-surface-container', 'text-on-surface');
+          pill.classList.add('bg-inverse-surface', 'text-primary-container');
+        });
+      });
+
+      // Quick visual feedback for 'Move to Bag' buttons
+      const addToBagButtons = document.querySelectorAll('button:has(span:contains("Move to Bag")), button:has(span.material-symbols-outlined:contains("shopping_bag"))');
+      addToBagButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const originalText = btn.innerHTML;
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Added to Bag';
+          btn.classList.add('bg-on-surface', 'text-surface-bright');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('bg-on-surface', 'text-surface-bright');
+          }, 1500);
+        });
+      });
+    });
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-surface":"#1a1c20","inverse-surface":"#2f3035","on-primary-fixed-variant":"#3e4c00","on-primary-fixed":"#171e00","on-surface-variant":"#444932","primary-fixed":"#caf300","on-error-container":"#93000a","surface-variant":"#e2e2e8","secondary-fixed-dim":"#ffb5a0","error-container":"#ffdad6","secondary":"#b02f00","on-primary-container":"#5f7400","surface-container-high":"#e8e8ed","surface-container":"#ededf3","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f0f6","tertiary-fixed":"#9cf0ff","surface-bright":"#f9f9ff","outline":"#757a60","primary":"#536600","tertiary-container":"#c9f6ff","on-secondary-fixed":"#3b0900","error":"#ba1a1a","primary-container":"#d4ff00","on-tertiary-fixed":"#001f24","on-tertiary":"#ffffff","on-secondary-container":"#541100","outline-variant":"#c5c9ac","tertiary":"#006875","on-error":"#ffffff","surface":"#f9f9ff","on-background":"#1a1c20","surface-tint":"#536600","on-tertiary-container":"#007785","secondary-fixed":"#ffdbd1","secondary-container":"#ff5722","inverse-primary":"#b0d500","primary-fixed-dim":"#b0d500","background":"#f9f9ff","on-secondary-fixed-variant":"#862200","surface-dim":"#d9d9df","on-tertiary-fixed-variant":"#004f58","tertiary-fixed-dim":"#00daf3","surface-container-highest":"#e2e2e8","surface-container-low":"#f3f3f9"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"gutter-mobile":"0.75rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.5rem",gutter:"1.5rem",margin:"3rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem"},fontFamily:{"headline-sm":["Outfit"],"headline-lg-mobile":["Outfit"],"headline-md":["Outfit"],"body-sm":["Plus Jakarta Sans"],"display-hero-mobile":["Outfit"],"label-caps":["Outfit"],"display-hero":["Outfit"],"label-md":["Outfit"],"headline-lg":["Outfit"],"body-lg":["Plus Jakarta Sans"],"title-lg":["Outfit"],"numeric-stat":["Outfit"],"body-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["22px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["30px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["28px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"500"}],"display-hero-mobile":["38px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"800"}],"display-hero":["56px",{lineHeight:"60px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-md":["14px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"700"}],"headline-lg":["40px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"title-lg":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"700"}],"numeric-stat":["32px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-40"><div class="bg-inverse-surface text-inverse-on-surface py-2 px-margin flex items-center justify-between font-label-caps text-label-caps tracking-widest"><div class="flex items-center gap-space-sm mx-auto"><span class="material-symbols-outlined text-sm text-primary-container">bolt</span><span>⚡ FLASH SALE: 25% OFF ALL WHEY ISOLATE &amp; PROTEIN BARS • CODE: APEX25 • FREE US SHIPPING OVER $50</span></div><div class="hidden lg:flex items-center gap-space-md"><span class="flex items-center gap-space-xs text-outline-variant"><span class="material-symbols-outlined text-xs">verified</span>INFORMED CHOICE CERTIFIED</span><span class="text-outline-variant">|</span><a class="hover:text-primary-container transition-colors" data-path="store-locator" href="#">FIND A GYM RETAILER</a></div></div><div class="max-w-[1440px] mx-auto px-margin h-20 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-shrink-0"><img alt="Apex Fuel Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQco3lNhf0aJihrNxQuAzZ0HQxoPKI5R5wmfDcdY-gATnntDg5yZHh4ZL_Ycc_ADhqgy4E2Epz6ahUdn9epLI7-iJh_V64ztwJ_Pfn5HcftPSRIc49SrM0o1klQ97WZEnPrIBYKkjbsAaiSNLJXzVZkzRvjEil66Z7t8iVNwdYzSX84TeK_tANnZYhHHiV_3Az0hJnoRV8m8srGaMZrExj1qOT1c-cnKtSsszvDyL"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none">APEX FUEL</span><span class="font-label-caps text-label-caps text-primary tracking-widest">PERFORMANCE LABS</span></div></div><div class="flex-1 max-w-2xl"><div class="relative flex items-center"><div class="absolute left-space-md flex items-center pointer-events-none"><span class="material-symbols-outlined text-on-surface-variant text-lg">search</span></div><input class="w-full h-12 pl-11 pr-32 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_3px_rgba(15,17,21,0.04)]" placeholder="Search 1,200+ powders, bars, oats..." type="text"/><div class="absolute right-space-xs flex items-center gap-space-xs"><button class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface-variant font-label-caps text-label-caps hover:bg-inverse-surface hover:text-primary-container transition-colors">WHEY</button><button class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface-variant font-label-caps text-label-caps hover:bg-inverse-surface hover:text-primary-container transition-colors">CREATINE</button></div></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-primary-container px-space-sm py-1.5 rounded-lg text-on-primary-container"><span class="material-symbols-outlined text-base">stars</span><span class="font-label-caps text-label-caps">EARN 2X POINTS</span></div><a class="flex items-center gap-space-sm px-space-md py-2.5 bg-inverse-surface rounded-lg text-inverse-on-surface hover:bg-on-surface transition-colors" data-path="cart" href="#"><div class="relative flex items-center"><span class="material-symbols-outlined text-primary-container text-xl">shopping_cart</span><span class="absolute -top-2 -right-2 bg-secondary-container text-on-secondary rounded-full w-4 h-4 flex items-center justify-center font-label-caps text-[9px]">3</span></div><div class="flex flex-col text-left"><span class="font-label-caps text-label-caps text-surface-variant leading-none">MY CART</span><span class="font-label-md text-label-md text-primary-container leading-none mt-0.5">$64.80</span></div></a><div class="flex items-center gap-space-sm pl-space-xs"><a class="flex items-center gap-space-xs group" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIPlUGTQlqMujSZTZUuA0hMMQtoLa08itJjzuJbKLdrqzLBwFl1PSuYSPJUfYlvGTV7SR-a20C0WeECP5_8RKZmoyTbjkR6FDlA3ZVuzy9Yt9LKE-xTP4rQ-NeMlu-2iWi1s0LDLT25MfJjeLhRoPZhH1V1BkqrfNZ_PPtz6cLImdu7cJfKz9efmL34f_us8KXETXT2fwnuWjdQpKd6nt9v_z7WVzysJQPBqyLFg-m"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-caps text-label-caps text-on-surface-variant leading-none">ALEX M.</span><span class="font-label-caps text-[10px] text-primary leading-none mt-0.5">PRO TIER</span></div></a></div></div></div><div class="bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="max-w-[1440px] mx-auto px-margin"><nav class="flex items-center justify-between h-12 overflow-x-auto" data-active-classes="text-primary font-label-md border-b-2 border-primary"><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" data-path="whey-and-plant-powders" href="#">Whey &amp; Plant Powders</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" data-path="protein-bars-and-snacks" href="#">Protein Bars &amp; Snacks</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" data-path="high-protein-oats" href="#">High-Protein Oats</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" data-path="pre-workout-and-creatine" href="#">Pre-Workout &amp; Creatine</a><a aria-current="page" class="transition-colors whitespace-nowrap text-primary font-label-md border-b-2 border-primary" data-path="best-sellers" href="#">Best Sellers</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" data-path="bundles" href="#">Bundles</a></div><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs text-secondary font-label-caps text-label-caps"><span class="material-symbols-outlined text-sm">local_fire_department</span>CLEARANCE LAB</span><a class="font-label-caps text-label-caps text-primary hover:underline" data-path="fuel-quiz" href="#">TAKE THE NUTRITION QUIZ →</a></div></nav></div></div></div></header><main class="w-full pt-40 bg-surface min-h-[600px]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SHOWCASE -->
+<section class="relative w-full overflow-hidden bg-surface py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Copy Column -->
+<div class="lg:col-span-7 flex flex-col z-10">
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 rounded-full bg-surface-container text-on-surface mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-base">bolt</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">LAB-FORMULATED ATHLETIC FUEL</span>
+</div>
+<h1 class="font-display-hero text-display-hero uppercase tracking-tight text-on-surface mb-space-md">
+          CLEAN FUEL.<br/>
+<span class="text-primary bg-primary-container px-2 py-0.5 rounded">PEAK PERFORMANCE.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg">
+          Fuel every rep, run, and recovery with third-party tested whey isolates, gourmet crispy protein bars, and power-packed overnight macro oats. Zero compromises. Zero filler.
+        </p>
+<!-- Macro Pill Callouts Strip -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xl">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base">fitness_center</span>
+<span>30g Pure Protein / scoop</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Zero Added Sugar</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-base">verified</span>
+<span>Informed-Sport Certified</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-on-surface text-base">sentiment_very_satisfied</span>
+<span>30-Day Taste Guarantee</span>
+</div>
+</div>
+<!-- CTA Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md mb-space-lg">
+<a class="px-8 py-4 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-0.5 shadow-md flex items-center gap-2" href="#">
+<span>SHOP BEST SELLERS</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="px-8 py-4 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors shadow-sm flex items-center gap-2" href="#">
+<span>EXPLORE MACRO BUNDLES</span>
+<span class="material-symbols-outlined text-lg">tune</span>
+</a>
+</div>
+<!-- Customer Rating Social Proof Bar -->
+<div class="flex items-center gap-space-md pt-space-md border-t-0">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-sm text-label-md text-on-surface">
+            4.9 / 5.0 RATING <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">FROM 18,400+ VERIFIED ATHLETES</span>
+</span>
+</div>
+</div>
+<!-- Right Visual Feature Showcase -->
+<div class="lg:col-span-5 relative flex flex-col gap-space-md">
+<!-- Floating Primary Showcase Card -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg shadow-xl overflow-hidden group">
+<div class="absolute top-space-md right-space-md z-20">
+<span class="px-2.5 py-1 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps uppercase rounded">HERO FORMULA</span>
+</div>
+<div class="w-full h-72 rounded-lg bg-surface-container-low mb-space-md overflow-hidden relative flex items-center justify-center">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern sleek matte black tub of Apex Pro Whey Isolate Vanilla Bean on clean bright white concrete athletic studio stage with subtle yellow volt neon rim lighting, high resolution product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCswljEj8eetRDHESHi5MHh9ReK722e531ugZlI7gV4y3dcBiyJYdYeTwTdurmJjq5Ss2QbmX42Ul2kzsT4raUzJHWM9lUnrOa8JsQDwgV3BphmmJl1ZeIjsHObY-LGn2Dp9NvCHUiZuk-VGs4G6tNUliIo_lXnGbXcgKJ85jIVmxRW9hceZ6FJubk5F6J48t9MPOj1lYjwOjehiigV0aO-LEYH1OTBcGLYn4v_I7UG"/>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/90 backdrop-blur-sm text-inverse-on-surface px-3 py-1 rounded font-label-caps text-label-caps flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              HYDROLYZED ISOLATE
+            </div>
+</div>
+<div class="flex justify-between items-start mb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase">ULTRA-FAST ABSORPTION</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Apex Hydrolyzed Whey Isolate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bourbon Vanilla Bean • 72 Servings</p>
+</div>
+<div class="text-right">
+<span class="font-numeric-stat text-numeric-stat text-on-surface">$64.99</span>
+<span class="block font-label-caps text-label-caps text-primary">SAVE 20% SUB</span>
+</div>
+</div>
+<!-- Quick Macro Grid -->
+<div class="grid grid-cols-3 gap-2 py-2 px-3 bg-surface-container rounded-lg my-space-sm text-center">
+<div>
+<span class="block font-label-caps text-[10px] text-on-surface-variant">PROTEIN</span>
+<span class="font-headline-sm text-label-md text-on-surface">30G</span>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-surface-variant">CARBS</span>
+<span class="font-headline-sm text-label-md text-on-surface">1G</span>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-surface-variant">CALORIES</span>
+<span class="font-headline-sm text-label-md text-on-surface">130 KCAL</span>
+</div>
+</div>
+</div>
+<!-- Overlapping Mini Multi-Cards Deck -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Card 2: Crunch Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex items-center gap-space-sm">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Apex triple crunch protein bar cut in half showing crisp protein puff layers and caramel center on minimalist white tabletop, commercial sports nutrition product photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyuOEBk0Att7r3DA_Sa-65PRtpOHLCje_u9dQi0ra1OsdkIjYWjwP_pwgyBARFMIS1sZQeiP8VJQ1PCq0jDvfyTkOpIQIFBTSrDf5BOF6xmjWZGnfd6paQrGFUWXlIvky_nPhilPGktCN4N5mHHv9UMPbFgAbwZN4W-lBcJFzItDb-kcdoOkxbdiqf3Vk3pc3hm55T2zIE29tUP4lqzrYEA4gnJNtxraeUGDs8sEJI"/>
+</div>
+<div class="min-w-0">
+<span class="font-label-caps text-[9px] text-secondary uppercase font-bold">20g Protein</span>
+<h4 class="font-headline-sm text-body-sm text-on-surface font-bold uppercase truncate">Layered Crunch Bar</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Salted Caramel</p>
+</div>
+</div>
+<!-- Card 3: Pro Oats -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex items-center gap-space-sm">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Overhead shot of a jar of Apex supercharged pro-oats with chia seeds and maple pecan crumbles in clean athletic kitchen lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWHBs3esOfW3U6h15HRavdvVCYyTg-d-xGHwURcjDM1cMiBsAkASKIV8aBeVy5saPpoWEBx1G_58LeGGkrcXfG_GO7Q1IEJMDXX_FuSTPDBBS2wWdAX_rnzGlx0jMPIbEzg8p5ED3EBJ3OF0PAIPfeowvit92m0Igl85NRD6JG0sQV-bFA1xDHAzIyfbG1C69jXC2vHZ0FvYCcdTIP6hK4wxgNM_m84zfJVmhFma8V"/>
+</div>
+<div class="min-w-0">
+<span class="font-label-caps text-[9px] text-primary uppercase font-bold">25g Protein</span>
+<h4 class="font-headline-sm text-body-sm text-on-surface font-bold uppercase truncate">Supercharged Oats</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Maple Toasted Pecan</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: QUICK CATEGORY GATEWAY (4 Athletic Cards) -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">TAILORED MACRO CHANNELS</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-0.5">TARGETED NUTRITION SYSTEMS</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Explore specialized fuel architectures constructed specifically for strength, lean velocity, and high-cadence endurance.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category Card 1 -->
+<a class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-52 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athletic protein shaker bottle with creamy isolate shake inside, gym chalk and kettlebells softly blurred in background, high contrast editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwDtB22ALTTxcaXG0Yh5hP4Xs33LfNRp0p3L-Pr-QFWTrWnb9wkyJeYoYqxMSti2gIHHB8Sy5I98eYLfhh2k9oT2EyYR-IObm-Y5Q5UL_r8ahiC0ifN5KAjNmCtzJQJOSasd8V-02DQPaO4RCLsnfEwF66gsdxPHl9fKFXuYg7cRy8uVCkwN-vyR4aSb8F22MpnAq16VygPOm9bnauGK8OAsgSJkHIdcjpyXJ6CbA"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded">48 SKUS</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-extrabold">24g - 32g PROTEIN</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Whey &amp; Plant Powders</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Hydrolyzed isolates, micellar casein night formulas, and organic fermented plant blends.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface font-headline-sm text-label-md group-hover:text-primary transition-colors">
+<span>SHOP 48 PRODUCTS</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Category Card 2 -->
+<a class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-52 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Array of unwrapped chocolate and peanut butter crispy athletic protein bars arranged cleanly on white studio surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFyujqGsAMuvmRcZfpqsdQ5VEL1Ci0gFJKEGM_ZHNOfxbM7044Q5lji6PI30wGZTMLvtQSm7ABVX1zl-d3MNchGoGs4PdfrlYwL3DrZGXvfWBuE73QeK5xwdm27hCePgYCllvOQARmmqqBcjoBkcZPr0bTFb3r0oxFR6MSi32VWWSUULIO7LNwKeVdVsE9T9-gdHYGeiWMfqZEzWwYxdq31tv_t4RWKAE2Dcrd2p4T"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded">32 FLAVORS</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-extrabold">20g PROTEIN • &lt;2g SUGAR</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Crispy Protein Bars</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Decadent triple-layer crunch bars engineered with whey crisps, creamy peanut butter, and zero chalky aftertaste.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface font-headline-sm text-label-md group-hover:text-secondary transition-colors">
+<span>SHOP 32 FLAVORS</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Category Card 3 -->
+<a class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-52 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High protein savory chips and sweet protein cookies in sleek foil snack pouches on pristine athletic gym floor bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34rr6gQx0Ov5W1Hxwb30TJeIUtyWWWnvJOpxrRl9V6LzIwwZ7VLClkeFmIpQZSLzupRPxwa4Ld_a0VWeESfxhVuahR0Fv3WZvEqvmNhldRtMz6aUNLBikUsZ4xAzVGU_JWVf3jM-nVB4zawUlq236y_t3KSiTdOt03NXGPX2EkSvYbs1SLPlA1-zgwrnybOhtIWiFem1dOwTXaXMwUOOayvRMOBju9itjsSkU8mpY"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded">26 SNACKS</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase font-extrabold">SAVORY &amp; SWEET MACROS</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Protein Snack Packs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Popped air-crisp protein chips, soft-baked double chocolate cookies, and almond butter power bites.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface font-headline-sm text-label-md group-hover:text-tertiary transition-colors">
+<span>SHOP 26 SNACKS</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Category Card 4 -->
+<a class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-52 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athletic breakfast bowl containing hot high protein rolled oats topped with dark chocolate chunks and sliced almonds on clean white countertop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDvCOmsO1iQ3lO0KVCI1wkjb6RdQK7i6dOjNv1CvY-GC1Pkqh4TVjkAPeZdwxevdo-ct-TwsMRyTAZiVlxnzBrVJG1s8VQcpCkzCKp04Ub7XThJS96bb9BuL3GxkxMiaiBsX9oWvbd4_L7vMqi3NswM06ZaVvCwLLrzk9wVGDACbfxaTq_SZ31x_PJmYqCOxFfklKxXe7rGCWoNcggAFcwx2CCh9GjB_7K_qSpjhHC"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded">14 FLAVORS</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-extrabold">25g SLOW-BURN CARBS</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">High-Protein Power Oats</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Gluten-free organic rolled oats paired with CFM cold-filtered whey isolate and chia for relentless morning drive.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface font-headline-sm text-label-md group-hover:text-primary transition-colors">
+<span>SHOP 14 FLAVORS</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FLAGSHIP POWDERS & ISOLATES -->
+<section class="w-full bg-surface py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">CLINICALLY PURIFIED FORMULAS</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-0.5">FLAGSHIP POWDERS &amp; ISOLATES</h2>
+</div>
+<!-- Filter Chips Tabs -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded bg-inverse-surface text-primary-container font-headline-sm text-label-md shadow-sm">All Powders</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">100% Whey Isolate</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Grass-Fed Whey</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Plant Protein</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Casein Recovery</button>
+</div>
+</div>
+<!-- 4 Rich Product Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Powder 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">BEST SELLER</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Pro Whey Isolate 5lb large tub Chocolate Fudge flavor front view clean 3D studio render with high dynamic range lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8N7SLQo8h1mkr-VsO0PxggIMcwz7M9nioAWF8QdDud_NpeeL-9dG2oVoVsEyy5igBkFXpG-VfoJ60gOE-sL50oo9s0m8aiMiMxosS_kRc_uqMSacuJ-KLkbNb8rS8_b4QR6iWfN6SdJicLB4Vnu220WfuQM9Mmx280SdGhZ5G77STU0DY468kNXLwBnZEUTm7UvYcssOaUXKkOFFO6VBg3IgfBDLw4qPCpmqHR8ED"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(4,120 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Pro Whey Isolate 5lb</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Gourmet Chocolate Fudge</p>
+<!-- Macro Micro-Strip -->
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-sm font-semibold">
+<span>PROTEIN: 30G</span>
+<span>•</span>
+<span>CARBS: 1G</span>
+<span>•</span>
+<span>CAL: 130</span>
+</div>
+<!-- Flavor Swatch Dots -->
+<div class="flex items-center gap-2 mb-space-md">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Flavors:</span>
+<div class="w-3.5 h-3.5 rounded-full bg-amber-900 ring-2 ring-primary ring-offset-1 cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-amber-100 ring-1 ring-outline cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-orange-300 ring-1 ring-outline cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-rose-300 ring-1 ring-outline cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div>
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$64.99</span>
+<span class="block font-body-sm text-[11px] text-primary font-bold">Sub &amp; Save: $51.99</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">70 Servings</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Powder 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-secondary-container text-on-secondary font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">NEW FLAVOR</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Clear Whey Hydrolysate 2lb tub Watermelon Splash flavor vibrant athletic studio lighting clean transparent packaging design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9CwvdXcHSvifSrRV7F8SVvt9IevGGm8eXg7nhAp3I9GJkpqXxvCXvuq60eE8X5nN5I-xFoEG1wC3_ww45R2I7Gi4bjOxWfbomeBG1ihMpD8A9Hca-fBOXnVWS53Lz69tDP2EFmkYpJ0x8tLYhv2dlRSe8eOHw14WIFPS6h6Gxz1gDgC_vyxXVDCmWqBxWw1rkW-xMveOKnWm3YoliODAxQ_u0I_794VA9-XZgmPt"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.8</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(980 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Clear Whey Hydrolysate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Juicy Watermelon Splash 2lb</p>
+<!-- Macro Micro-Strip -->
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-sm font-semibold">
+<span>PROTEIN: 22G</span>
+<span>•</span>
+<span>CARBS: 0G</span>
+<span>•</span>
+<span>CAL: 90</span>
+</div>
+<!-- Flavor Swatch Dots -->
+<div class="flex items-center gap-2 mb-space-md">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Flavors:</span>
+<div class="w-3.5 h-3.5 rounded-full bg-rose-500 ring-2 ring-primary ring-offset-1 cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-lime-400 ring-1 ring-outline cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-cyan-400 ring-1 ring-outline cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div>
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$38.99</span>
+<span class="block font-body-sm text-[11px] text-primary font-bold">Sub &amp; Save: $31.19</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">30 Servings</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Powder 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-primary text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">VEGAN</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Raw Plant Fuel Organic Blend protein canister Vanilla Chai Latte on clean natural stone pedestal in bright athletic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZZAMcpVnlQGqWGejDSYKA95FICj3-1plnG_gZ7peN1Dtjzlj46ODBgDPnlJOXTmUFysjuHiOF2g40j4goRyT_gfCRXDb7D-mWuaZWceQB0kdzav0jl7sD_4a24Y1vGQR8TJlV8O6_WLuiiiQlMPFXFn21C32PYUe_KzmMck3Bq0oF21xO4UoOLkiCOwsHdKQYNkbdyT96w-iLGr_z3D9RGAs3mnXXcRnesQxzfygD"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(1,540 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Raw Plant Fuel 2.5lb</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Vanilla Chai Latte Blend</p>
+<!-- Macro Micro-Strip -->
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-sm font-semibold">
+<span>PROTEIN: 25G</span>
+<span>•</span>
+<span>CARBS: 2G</span>
+<span>•</span>
+<span>CAL: 125</span>
+</div>
+<!-- Flavor Swatch Dots -->
+<div class="flex items-center gap-2 mb-space-md">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Flavors:</span>
+<div class="w-3.5 h-3.5 rounded-full bg-amber-200 ring-2 ring-primary ring-offset-1 cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-stone-700 ring-1 ring-outline cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div>
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$44.99</span>
+<span class="block font-body-sm text-[11px] text-primary font-bold">Sub &amp; Save: $35.99</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">35 Servings</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Powder 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">NIGHT RECOVERY</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Nighttime Micellar Casein 4lb tub Cookies and Cream flavor on slate gray athletic gym locker platform clean high contrast commercial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXK3m3UuLYssE0LaAU_JKYzR6LLxDG6QkzRLgNlP6u8M4spG8LwxpqVlKiGNbh0vguzsBFQVm44mqfvmZUFIh0Lh1YZ-osTkw1wjFha9znXXnjAF7he3p3lTeW6lqr9VMgzPTnzttFZPlQkyj72nhOYuspXWaQVJRgdqWfsSDIcdsZ2gdwR7Ds81fRrm0c8JV9oSYkqgQX4vz9HPZnfDBXkJB7zXHly6iRxpsL6rVI"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.7</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(810 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Night Micellar Casein</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Cookies &amp; Cream 4lb</p>
+<!-- Macro Micro-Strip -->
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-sm font-semibold">
+<span>PROTEIN: 26G</span>
+<span>•</span>
+<span>BCAAS: 5.5G</span>
+<span>•</span>
+<span>CAL: 120</span>
+</div>
+<!-- Flavor Swatch Dots -->
+<div class="flex items-center gap-2 mb-space-md">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Flavors:</span>
+<div class="w-3.5 h-3.5 rounded-full bg-slate-300 ring-2 ring-primary ring-offset-1 cursor-pointer"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-amber-900 ring-1 ring-outline cursor-pointer"></div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div>
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$56.99</span>
+<span class="block font-body-sm text-[11px] text-primary font-bold">Sub &amp; Save: $45.59</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">55 Servings</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD TO BAG</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PROTEIN BARS & ON-THE-GO SNACKS -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">RAPID ON-THE-GO NUTRITION</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-0.5">PROTEIN BARS &amp; SNACKS</h2>
+</div>
+<!-- Filter Chips -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded bg-inverse-surface text-primary-container font-headline-sm text-label-md">Triple-Layered Bars</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Crispy Puffs</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Protein Cookies</button>
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-headline-sm text-label-md transition-colors">Keto-Friendly</button>
+</div>
+</div>
+<!-- 4 Rich Product Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Snack 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-secondary-container text-on-secondary font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">TOP RATED</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Box of 12 Apex Triple Crunch Protein Bars Dark Chocolate Peanut Butter displayed with one open bar revealing multi-layer crisp filling, modern studio photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUg56GFK5DAzbJc4TK_7x_ys4g8dbKA9TNkGkeuBCLZGJCHI_ykAwwrg5cJOkzHx5k5pYkqUbQG41wDHATg_j5JaI712HrWNDn9YfXuUWAL4Y6vWePRCDue5BlHtvda8soRE5CggRFZKlGCAwYfq0Rssz25Uy7Mgnk-yDNs9xJ_b9tOSEcaA1_FFbiKUEhW0F5nkQx4bgGZkqdRmKHOMV-_WFp6Vqxe7gghNDjGG56"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(6,210 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Triple Crunch Bars (12pk)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Dark Chocolate Peanut Butter</p>
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-md font-semibold">
+<span>PROTEIN: 21G</span>
+<span>•</span>
+<span>SUGAR: 1.8G</span>
+<span>•</span>
+<span>CAL: 210</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$32.99</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">$2.75 / Bar</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD BOX TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Snack 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">HIGH FIBER</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Pro-Popped Protein Chips 8 pack bags Zesty BBQ flavor styled with scattered crispy protein chips on clean white modern surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqcFOpFBhIxlEN-DTB1uvd0HdxeZxsDMRtMylQEd_xuyYGq_BiFktM0PljC6cSzWTpRTlGaPYbYiiTWqSSba3tTqtd3uC885qe9GUvOKdMhYb2unYpQt3xEKIpHVi_omLk6NcHWnXkHs1KIjucCqdYp_viD3dYMsb8n60m1h5eHyhoPy4N0wAtwjbGajPZPEWzis_8pB8BmjCHUEBDQ8Jj31Pr-qB_D8F3mjjpMSnz"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.8</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(1,120 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Popped Chips (8pk)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Zesty BBQ Smoke Crunch</p>
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-md font-semibold">
+<span>PROTEIN: 19G</span>
+<span>•</span>
+<span>FIBER: 5G</span>
+<span>•</span>
+<span>CAL: 140</span>
+</div>
+</div>
+<div>
+<div class="flex items-line justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$21.99</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">Baked Not Fried</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD PACK TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Snack 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">STAFF PICK</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Soft-Baked Protein Cookie box with broken cookie showing rich double chocolate fudge chunks on clean marble countertop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHFTLOu3xOEDQNcwi5F7Q7nS-A_hb0FYS49vZB-NlksNNoH7tz_Rh6IHD0LndjLwsIP8KPWFzLu9Hbr_I_sqJ1efjRYWUl2MfL9oYgC2NG4pqHKPu8CpthwkViLytxJmLLpUOiJXDtBPKQQX20guNMB7Vu7sejcBmzennezoaK92fUEEwHcJH9cujbmJIa3QUldAhVdDTtQfjNlu8_Xi4NfOEoRySO-xYI0TmGS3l4"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(2,950 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Soft-Baked Cookie (12pk)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Double Chocolate Fudge Chunk</p>
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-md font-semibold">
+<span>PROTEIN: 18G</span>
+<span>•</span>
+<span>COLLAGEN: 5G</span>
+<span>•</span>
+<span>CAL: 220</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$29.99</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">$2.50 / Cookie</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD BOX TO BAG</span>
+</button>
+</div>
+</div>
+<!-- Snack 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low mb-space-md overflow-hidden flex items-center justify-center">
+<span class="absolute top-2.5 left-2.5 bg-primary text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">ORGANIC</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Almond Butter Protein Bites resealable stand-up pouch Cinnamon Roll flavor with round nut butter bites displayed on pristine tabletop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1iW5aLSHMI6OqXMicXEOnC_8gT1gbOpV5JSn4hfAFAyOnDpLlcUQD9csdTpuMfD_3jbngfWKbMUS-05arqt1t6JLkBwupOJFRVu-3b48g0U83GOf8TEBh1_cjnLBFmKBnoI-EZHV5GzjRkeHwqGofRKvO7XvFthyi3Yb7xgaFHStV1ijvpOt21LR4m2Nl6GAe6cXfFPcvLA-uSGqLByJMZ6sWVZeSI3UMrcvJt8s0"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-label-caps text-on-surface">4.7</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">(730 reviews)</span>
+</div>
+<h3 class="font-headline-sm text-title-lg uppercase text-on-surface">Apex Nut Butter Bites</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Cinnamon Roll Almond Core</p>
+<div class="flex items-center justify-between py-1.5 px-2 bg-surface-container rounded font-label-caps text-[10px] text-on-surface mb-space-md font-semibold">
+<span>PROTEIN: 15G</span>
+<span>•</span>
+<span>GLUTEN FREE</span>
+<span>•</span>
+<span>CAL: 180</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$14.99</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">Pouch (6 Servings)</span>
+</div>
+<button class="w-full py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">shopping_bag</span>
+<span>ADD POUCH TO BAG</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: SUPERCHARGED HIGH-PROTEIN OATS & BREAKFAST -->
+<section class="w-full bg-surface py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">ENDURANCE GLYCOGEN ARCHITECTURE</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-0.5">HIGH-PROTEIN OATS &amp; BREAKFAST FUEL</h2>
+</div>
+<a class="font-headline-sm text-label-md uppercase text-primary hover:underline flex items-center gap-1" href="#">
+<span>BUILD YOUR BREAKFAST BUNDLE</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Featured Wide Breakfast Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-space-lg">
+<!-- Oats 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden">
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">BREAKFAST FAVORITE</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Overnight Power Oats large 1kg tub Dark Chocolate Sea Salt flavor with rustic glass jar containing prepared overnight oats topped with chia seeds, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-X1L4aX-y9zT-fpkdHQam92wiDr6Kq0io4-aV7_vjmfLwF7dT5WiTC1nVapMdy6h1TcZ5lFdLPk8UXMzPBYx26oxYnt4DSbKCigINExGj5aVX_t-c4LhzYQIREGl5i7vUjbOLjjJ3M9MtTDliPgHP5ZM3R_8baNcMC4G4qafTs3mUWHFnUogaAlj1Cono8Hl7VLnPm9UhBCV-4qeph-EDgmMbt_1R3zQTfNMh7yVS"/>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">25g Whey Isolate + Chia</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1">Apex Overnight Power Oats Tub</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-sm">Dark Chocolate Sea Salt (1kg Bulk Tub) - Just add cold water or milk and chill overnight.</p>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$24.99</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">20 Servings</span>
+</div>
+<button class="w-full py-3 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+<span>ADD TO CART</span>
+</button>
+</div>
+</div>
+<!-- Oats 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden">
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">QUICK PREP</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Instant Pro-Oatmeal box with individual 10 single-serve packets Spiced Apple Cinnamon flavor in warm bright morning kitchen aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyh1gX3BiQjdYHGgUpcU2IsB4f7r9gi897cuQXADvXKiAOBGCR76AXjljJ2bzjR5dv3h3kmVlkjpDepapyjEhn9n1EtYLwFf7jV_9UnlAfhJOs5WvpPzBEPF-o-DdpdhrWLfODczOtqpciaah0_FW18HWGVn4P86eo2EpCjCzIt7dBoWYjWPb9w6jEAb_f5YIk-lvyITJO1C03FKA2kCb3LjfQ-KPb2G30AK4Rxl0e"/>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">22g Protein • 90 Seconds</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1">Instant Pro-Oatmeal Packets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-sm">Spiced Apple Cinnamon (10 Packets) - Ready in 90 seconds. Clean fuel for morning commutes.</p>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$18.99</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">10 Packets</span>
+</div>
+<button class="w-full py-3 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+<span>ADD TO CART</span>
+</button>
+</div>
+</div>
+<!-- Oats 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-64 rounded-lg bg-surface-container-low mb-space-md overflow-hidden">
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded z-10 font-bold">NEW RELEASE</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bag of Apex High-Protein Granola Crunch Maple Pecan flavor with crunchy clusters poured into ceramic white bowl with fresh berries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhZLG74C68bEnFUFzuGb9NZcAB1b65bJWMHDvTS4FuOPoE9b1bazMpZT8OF9JjqORHXrPeAVji1-wlCZYt4uMbL4yFMrKSK5ghKokW3RIxs9ScRfVO5qOSvS_BaWc58sBpUcd-0mTJbeBpURS0aRTMk42FGae3AXVqYDY4xz5jC5cL4Sh-m3ppSMGOI-Oq2_NibTJiuBOR5TUpnGQ1-j7Isgv-SKUUfl0dQbIcNyI7"/>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">16g Protein / Bowl</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1">High-Protein Granola Crunch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-sm">Maple Pecan Toasted Clusters (500g) - Low sugar, high satiety crunchy clusters for yogurt &amp; smoothie bowls.</p>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-numeric-stat text-headline-sm text-on-surface font-extrabold">$12.99</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">12 Bowls</span>
+</div>
+<button class="w-full py-3 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+<span>ADD TO CART</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Breakfast Bundle Banner Promo -->
+<div class="bg-surface-container-high rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-3xl">local_cafe</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">BUILD THE APEX MORNING STACK</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Combine 1x Power Oats Tub + 1x Whey Isolate + 1x Granola Crunch &amp; automatically unlock 25% OFF + Free Frother.</p>
+</div>
+</div>
+<button class="px-6 py-3 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-colors whitespace-nowrap shadow-sm">
+          LAUNCH BUNDLE BUILDER
+        </button>
+</div>
+</div>
+</section>
+<!-- SECTION 6: PERFORMANCE NUTRITION TRANSPARENCY & PROOF BANNER -->
+<section class="w-full bg-inverse-surface text-inverse-on-surface py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-caps text-label-caps text-primary-container uppercase tracking-widest">ZERO PROPRIETARY BLENDS. ZERO COMPROMISE.</span>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight mt-1 text-inverse-on-surface">THE APEX PURITY COMMITMENT</h2>
+<p class="font-body-md text-body-md text-surface-variant mt-space-xs">
+          Every production batch undergoes strict third-party lab assaying. We display every milligram with complete transparency.
+        </p>
+</div>
+<!-- 4 Trust Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<div class="p-space-lg rounded-xl bg-surface-container-high/5">
+<div class="w-12 h-12 rounded bg-primary-container text-on-primary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h4 class="font-headline-sm text-title-lg uppercase mb-1 text-inverse-on-surface">Informed-Choice Tested</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">Rigorously screened for over 250 WADA banned substances. Trusted by Olympic and NCAA collegiate athletes.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-high/5">
+<div class="w-12 h-12 rounded bg-primary-container text-on-primary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">science</span>
+</div>
+<h4 class="font-headline-sm text-title-lg uppercase mb-1 text-inverse-on-surface">Zero Amino Spiking</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">We never add cheap glycine or taurine to inflate protein numbers. Every gram on the label is authentic complete protein.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-high/5">
+<div class="w-12 h-12 rounded bg-primary-container text-on-primary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">filter_vintage</span>
+</div>
+<h4 class="font-headline-sm text-title-lg uppercase mb-1 text-inverse-on-surface">Cold Microfiltration</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">Non-denatured Cross-Flow Microfiltration (CFM) protects vital immunoglobulin fractions and optimizes digestive ease.</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-high/5">
+<div class="w-12 h-12 rounded bg-primary-container text-on-primary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<h4 class="font-headline-sm text-title-lg uppercase mb-1 text-inverse-on-surface">Clean Sweeteners</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">Naturally flavored and sweetened with premium fermented stevia and monk fruit extract. Zero sucralose bloat.</p>
+</div>
+</div>
+<!-- Verified Athlete Testimonials Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-lg border-t-0">
+<!-- Review 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-high/10 flex flex-col justify-between">
+<div>
+<div class="flex text-primary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface italic">"Zero digestive discomfort, instant mixability even in ice cold water, and the chocolate fudge tastes like actual melted gelato. My go-to post-squat fuel."</p>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed font-bold flex items-center justify-center font-label-caps text-xs">MK</div>
+<div>
+<span class="font-label-caps text-label-caps block text-inverse-on-surface">MARCUS K.</span>
+<span class="font-body-sm text-[11px] text-surface-variant">Competitive Powerlifter (USAPL 83kg)</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-high/10 flex flex-col justify-between">
+<div>
+<div class="flex text-primary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface italic">"The Triple Crunch Peanut Butter bars have ruined other protein snacks for me. High protein, actually crispy, and under 2g sugar makes hitting prep macros effortless."</p>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary font-bold flex items-center justify-center font-label-caps text-xs">EL</div>
+<div>
+<span class="font-label-caps text-label-caps block text-inverse-on-surface">ELENA L.</span>
+<span class="font-body-sm text-[11px] text-surface-variant">CrossFit Games Regional Qualifier</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-high/10 flex flex-col justify-between">
+<div>
+<div class="flex text-primary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface italic">"The Overnight Power Oats are a cheat code for 5:30 AM track workouts. Stays smooth, 25 grams of protein, and zero stomach heaviness when pushing max intervals."</p>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed font-bold flex items-center justify-center font-label-caps text-xs">DT</div>
+<div>
+<span class="font-label-caps text-label-caps block text-inverse-on-surface">DEREK T.</span>
+<span class="font-body-sm text-[11px] text-surface-variant">Ironman 70.3 Age Group Competitor</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: ATHLETE COMMUNITY WALL & SUBSCRIBE & SAVE STRIP -->
+<section class="w-full bg-surface py-space-xl px-margin">
+<div class="max-w-[1440px] mx-auto">
+<!-- Athlete Community Preview Grid -->
+<div class="mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">#APEXFUELCOMMUNITY</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-0.5">FUELED BY THE PACK</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Tag @ApexFuelLabs to be featured on our athlete roster and earn $50 in fuel credits.
+          </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="relative h-64 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athletic woman holding shaker bottle of Apex protein powder in high energy gym locker room after intense barbell workout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC94kHcMDwa1u-Ur9VAKNIdMlxHA5vue7xJ9rOWJR4FW3M6FPaRJeA_V0tvPCi1AzxrUj7Q67kLlSZS7AACCKbLiDCdFYsPeGgkBE6p_HeN7yK4APY_X5zKiAWoCxZbWoSFkjVwG6JxSRo38p7h0goXV2Fhj_2toF5C_i9w07IxZ8tl7VKeIy04khCkY5p9KX6--6dswvmKIOqlLOx2Q55nmxV94cHURGg2umoJ3_xP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<span class="font-label-caps text-label-caps text-inverse-on-surface">@jess_lifts_heavy</span>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Male athlete eating an Apex crisp protein bar on running track bleachers in morning sunrise light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJdAp_YwyALDe7Vy_IY3hnll2-0Nc2LC_c7y3TN84lTHJigCOCfqjhsVKYcKQRgupmQB0E139wimBtp_2WT2J2BUbqKi8C7OZBn5YsCbYPtsS4cEAJYJ9wfDGLkDLxgOvTXsvrSd9IANjul0JwMbLLTm303a3GbsAeOA-nmyMIL8_wH01AWwBQZcp2Gbl9Y1gP37yndOnpSSYVtL98dPBXkHmgaASHPaIYbefp7K5b"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<span class="font-label-caps text-label-caps text-inverse-on-surface">@sam_sprint_coach</span>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Meal prep layout showing three jars of prepared Apex high protein overnight oats with fresh berries on marble counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnE56rvRkh1M9iybEBLHHsFwn2DZbClTWLb4igSDvJNR7tUl1vZ_ET-mR1ln3RMX6qwh7DpZDRPev7SKY9EYnALyI3LSdkeMw3uv-49VbRcxoFN7ZnxyzrNElr7ohD2gkt6RNHN7291LBr9KqThqvZKCUgZ0CcTwBcuBzQk2P5aFs2lrOCTTKl157BLVJY4dc-sDbNsESTCwBC26Ok4uGWAk_oFAegKpcy1FfLFjym"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<span class="font-label-caps text-label-caps text-inverse-on-surface">@macro_fuel_daily</span>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athlete pouring clear watermelon protein hydrolysate into icy glass tumbler post endurance bike ride" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrLtjKjdXmq3tv9bfpbevGviloQq4ohsP2lUM3O9cJrrvKCmulLaq-phZNt3HpBXeWTLAUDpMjDZy5nwK-bYPcV-UyxlgS-H3dWKw2Kg5C36BXHUEdxXWiXic6aF_hUNcUJHGNSceffzB6Rib5zQYyUlk6Sp3UPifrfCsLF3HCN7Sq20qEkXlaSOEHGu-rDH0BXfHM_kcjIXYtBw42j1Ijycm5Lsm02LNWeyKwrGe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<span class="font-label-caps text-label-caps text-inverse-on-surface">@tyler_triathlon</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SUBSCRIBE & SAVE 20% HIGH-VOLTAGE BANNER -->
+<div class="relative rounded-2xl bg-surface-container-high p-space-xl overflow-hidden shadow-lg">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-primary-container/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<span class="px-3 py-1 bg-primary text-on-primary font-label-caps text-label-caps uppercase rounded-full inline-block mb-space-sm font-bold">VIP ATHLETE REPLENISHMENT</span>
+<h3 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">
+              NEVER MISS A MACRO. SAVE 20% ON AUTO-DELIVERY.
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+              Lock in maximum savings on your monthly tub, bars, and oats. Total control with zero lock-in contracts.
+            </p>
+<!-- Subscription Perks Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">sports_bar</span>
+<span class="font-headline-sm text-body-sm text-on-surface font-bold uppercase">FREE STAINLESS SHAKER</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">event_repeat</span>
+<span class="font-headline-sm text-body-sm text-on-surface font-bold uppercase">PAUSE OR CANCEL ANYTIME</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
+<span class="font-headline-sm text-body-sm text-on-surface font-bold uppercase">FREE PRIORITY EXPEDITED</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">CHOOSE CYCLE:</span>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">20% OFF APPLIED</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2.5 rounded bg-surface-container text-on-surface font-headline-sm text-label-md hover:bg-surface-variant transition-colors">30 DAYS</button>
+<button class="py-2.5 rounded bg-inverse-surface text-primary-container font-headline-sm text-label-md shadow-sm">45 DAYS</button>
+<button class="py-2.5 rounded bg-surface-container text-on-surface font-headline-sm text-label-md hover:bg-surface-variant transition-colors">60 DAYS</button>
+</div>
+<button class="w-full mt-2 py-4 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-0.5 shadow-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">autorenew</span>
+<span>START SMART SUBSCRIPTION</span>
+</button>
+<span class="font-body-sm text-[11px] text-center text-on-surface-variant">Includes 30-Day Taste Guarantee on all recurring deliveries.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_8px_rgba(0,0,0,0.03)]"><div class="bg-inverse-surface text-inverse-on-surface py-space-xl px-margin"><div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-high/10 flex items-center justify-center flex-shrink-0 text-primary-container"><span class="material-symbols-outlined text-2xl">science</span></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider text-inverse-on-surface">100% Lab Tested</h4><p class="font-body-sm text-body-sm text-surface-variant mt-0.5">Third-party HPLC purity verified for zero fillers.</p></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-high/10 flex items-center justify-center flex-shrink-0 text-primary-container"><span class="material-symbols-outlined text-2xl">verified_user</span></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider text-inverse-on-surface">Informed-Choice</h4><p class="font-body-sm text-body-sm text-surface-variant mt-0.5">Banned substance tested for competitive athletes.</p></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-high/10 flex items-center justify-center flex-shrink-0 text-primary-container"><span class="material-symbols-outlined text-2xl">published_with_changes</span></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider text-inverse-on-surface">30-Day Guarantee</h4><p class="font-body-sm text-body-sm text-surface-variant mt-0.5">Hassle-free refunds if your macros don't hit right.</p></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-high/10 flex items-center justify-center flex-shrink-0 text-primary-container"><span class="material-symbols-outlined text-2xl">local_shipping</span></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider text-inverse-on-surface">Carbon-Neutral Shipping</h4><p class="font-body-sm text-body-sm text-surface-variant mt-0.5">Dispatched same-day via eco-certified carriers.</p></div></div></div></div><div class="bg-surface-container-low py-space-xl px-margin"><div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-xl"><div class="max-w-xl"><span class="font-label-caps text-label-caps text-secondary uppercase">VIP ATHLETE BRIEFING</span><h3 class="font-headline-md text-headline-md text-on-surface uppercase mt-1">GET 15% OFF YOUR FIRST FUEL PACK</h3><p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Join 85,000+ strength competitors receiving weekly macro protocols, clean science releases, and subscriber-only flash restocks.</p></div><div class="w-full lg:w-auto flex-1 max-w-md"><form class="flex flex-col sm:flex-row gap-space-xs"><input class="flex-1 h-12 px-space-md bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your training email..." type="email"/><button class="h-12 px-space-lg bg-primary-container hover:bg-primary-fixed text-on-primary-fixed font-headline-sm text-label-md uppercase tracking-wider rounded transition-all shadow-[0_2px_8px_rgba(0,0,0,0.08)] whitespace-nowrap" type="button">CLAIM 15%</button></form><span class="font-body-sm text-[11px] text-on-surface-variant mt-2 block">Unsubscribe anytime. We respect your training discipline and data privacy.</span></div></div></div><div class="py-space-xl px-margin"><div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-space-xl"><div class="col-span-2"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Apex Fuel Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQco3lNhf0aJihrNxQuAzZ0HQxoPKI5R5wmfDcdY-gATnntDg5yZHh4ZL_Ycc_ADhqgy4E2Epz6ahUdn9epLI7-iJh_V64ztwJ_Pfn5HcftPSRIc49SrM0o1klQ97WZEnPrIBYKkjbsAaiSNLJXzVZkzRvjEil66Z7t8iVNwdYzSX84TeK_tANnZYhHHiV_3Az0hJnoRV8m8srGaMZrExj1qOT1c-cnKtSsszvDyL"/><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">APEX FUEL</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Engineered for uncompromising human velocity. Clinical doses, full label disclosure, zero proprietary blend gimmicks.</p><div class="flex items-center gap-space-md mt-space-lg"><a class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a><a class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a><a class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">forum</span></a><a class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a></div></div><div><h4 class="font-headline-sm text-title-lg text-on-surface uppercase mb-space-md">FUEL DIRECTORY</h4><ul class="space-y-space-sm font-body-md text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="whey-and-plant-powders" href="#">Whey Isolate Formula</a></li><li><a class="hover:text-on-surface transition-colors" data-path="whey-and-plant-powders" href="#">Hydrolyzed Plant Protein</a></li><li><a class="hover:text-on-surface transition-colors" data-path="protein-bars-and-snacks" href="#">Crispy Protein Bars</a></li><li><a class="hover:text-on-surface transition-colors" data-path="high-protein-oats" href="#">Overnight Macro Oats</a></li><li><a class="hover:text-on-surface transition-colors" data-path="pre-workout-and-creatine" href="#">Creapure Creatine Mono</a></li><li><a class="hover:text-on-surface transition-colors" data-path="pre-workout-and-creatine" href="#">Nitric Oxide Pump Matrix</a></li></ul></div><div><h4 class="font-headline-sm text-title-lg text-on-surface uppercase mb-space-md">ATHLETE SUPPORT</h4><ul class="space-y-space-sm font-body-md text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">Track Supplement Order</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Subscription Manager</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Shipping &amp; Customs</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Certificate of Analysis (COA)</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Returns &amp; Macro Guarantee</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Military &amp; First Responder</a></li></ul></div><div><h4 class="font-headline-sm text-title-lg text-on-surface uppercase mb-space-md">SCIENCE &amp; LABS</h4><ul class="space-y-space-sm font-body-md text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">The Apex Research Hub</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Ingredient Sourcing Map</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Informed-Sport Verification</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Collegiate Team Program</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Affiliate Athlete Roster</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Careers in Nutrition Sci</a></li></ul></div></div><div class="max-w-[1440px] mx-auto mt-space-xl pt-space-lg border-t border-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 APEX FUEL PERFORMANCE LABS INC. ALL RIGHTS RESERVED.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><span>•</span><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><span>•</span><a class="hover:text-on-surface transition-colors" href="#">FDA Disclaimer</a><span>•</span><a class="hover:text-on-surface transition-colors" href="#">Accessibility</a></div></div></div></footer></body></html>

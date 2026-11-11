@@ -1,0 +1,133 @@
+export interface ShopFlavor {
+  id: string;
+  name: string;
+  subLabel: string;
+  searchTerm: string;
+  image: string;
+  tag: string;
+  gradientTone: string;
+  description: string;
+}
+
+export const SHOP_FLAVORS: ShopFlavor[] = [
+  {
+    id: 'rasmalai',
+    name: 'Rasmalai',
+    subLabel: 'Cardamom & Saffron Milk',
+    searchTerm: 'rasmalai',
+    image: '/images/flavors/rasmalai.jpg',
+    tag: 'ROYAL SWEET',
+    gradientTone: 'from-amber-500/20 to-amber-900/60',
+    description: 'Saffron-infused soft cottage cheese delicacy with green pistachios',
+  },
+  {
+    id: 'chocolate',
+    name: 'Belgian Chocolate',
+    subLabel: 'Double Rich Dark Cocoa',
+    searchTerm: 'cocoa',
+    image: '/images/flavors/chocolate.jpg',
+    tag: '100% REAL COCOA',
+    gradientTone: 'from-amber-950/20 to-black/80',
+    description: 'Rich dark Belgian cocoa slabs with cascading warm chocolate fudge',
+  },
+  {
+    id: 'coffee',
+    name: 'Cold Brew Coffee',
+    subLabel: 'Dark Roasted Espresso',
+    searchTerm: 'coffee',
+    image: '/images/flavors/coffee.jpg',
+    tag: 'PURE ARABICA',
+    gradientTone: 'from-stone-900/20 to-black/80',
+    description: 'Dark roasted espresso beans with velvety natural crema notes',
+  },
+  {
+    id: 'vanilla',
+    name: 'French Vanilla Pod',
+    subLabel: 'Madagascar Bean Extract',
+    searchTerm: 'vanilla',
+    image: '/images/flavors/vanilla.jpg',
+    tag: 'PURE EXTRACT',
+    gradientTone: 'from-amber-100/20 to-stone-900/60',
+    description: 'Creamy Tahitian vanilla scoop with aromatic natural bean flecks',
+  },
+  {
+    id: 'kesar-pista',
+    name: 'Kesar Pista',
+    subLabel: 'Kashmiri Saffron & Nut',
+    searchTerm: 'kesar',
+    image: '/images/flavors/kesar-pista.jpg',
+    tag: 'HERITAGE BLEND',
+    gradientTone: 'from-yellow-500/20 to-amber-950/70',
+    description: 'Royal Kashmiri saffron infused with roasted California pistachios',
+  },
+  {
+    id: 'malai-kulfi',
+    name: 'Malai Kulfi',
+    subLabel: 'Rabri & Almond Crunch',
+    searchTerm: 'kulfi',
+    image: '/images/flavors/malai-kulfi.jpg',
+    tag: 'DESI DELIGHT',
+    gradientTone: 'from-amber-200/20 to-yellow-950/70',
+    description: 'Slow-simmered rabri kulfi on a traditional stick with crushed almonds',
+  },
+  {
+    id: 'cookies-cream',
+    name: 'Cookies & Cream',
+    subLabel: 'Dark Biscuit Crunch',
+    searchTerm: 'cookie',
+    image: '/images/flavors/cookies-cream.jpg',
+    tag: 'CRUNCHY CRUMB',
+    gradientTone: 'from-stone-300/20 to-black/80',
+    description: 'Sweet dairy cream studded with crispy dark cocoa biscuit chunks',
+  },
+  {
+    id: 'butterscotch',
+    name: 'Butterscotch Crunch',
+    subLabel: 'Golden Praline Swirl',
+    searchTerm: 'butterscotch',
+    image: '/images/flavors/butterscotch.jpg',
+    tag: 'GOLDEN PRALINE',
+    gradientTone: 'from-orange-400/20 to-amber-950/70',
+    description: 'Caramelized golden butterscotch crunch with warm praline sauce',
+  },
+  {
+    id: 'alphonso-mango',
+    name: 'Alphonso Mango',
+    subLabel: 'Ratnagiri Sweet Nectar',
+    searchTerm: 'mango',
+    image: '/images/flavors/mango.jpg',
+    tag: 'REAL MANGO PULP',
+    gradientTone: 'from-amber-400/20 to-orange-950/70',
+    description: 'Sun-ripened Ratnagiri Alphonso mango pulp with tropical sweetness',
+  },
+  {
+    id: 'salted-caramel',
+    name: 'Salted Caramel',
+    subLabel: 'Fleur De Sel Amber',
+    searchTerm: 'caramel',
+    image: '/images/flavors/caramel.jpg',
+    tag: 'SLOW COOKED',
+    gradientTone: 'from-amber-500/20 to-stone-950/80',
+    description: 'Slow-cooked fleur de sel amber caramel swirl with golden syrup drop',
+  },
+  {
+    id: 'strawberry-cream',
+    name: 'Strawberry Cream',
+    subLabel: 'Alpine Berry Glaze',
+    searchTerm: 'strawberry',
+    image: '/images/flavors/strawberry.jpg',
+    tag: 'FRESH BERRY',
+    gradientTone: 'from-rose-400/20 to-rose-950/80',
+    description: 'Hand-picked Alpine strawberries blended with fresh sweet churned cream',
+  },
+  {
+    id: 'blueberry-cheesecake',
+    name: 'Blueberry Cheesecake',
+    subLabel: 'Wild Berry & Graham',
+    searchTerm: 'blueberry',
+    image: '/images/flavors/blueberry.jpg',
+    tag: 'WILD BERRY',
+    gradientTone: 'from-purple-400/20 to-purple-950/80',
+    description: 'Wild mountain blueberry compote swirled into velvet cream cheese',
+  },
+];
